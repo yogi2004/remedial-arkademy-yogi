@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<button onclick="myFunction()">Tekan Saya</button>
+
+	<p id="hasil"></p>
+
+	<script>
+		var points = [4, 2, 3, 1, 7];
+		document.getElementById("demo").innerHTML = points;
+
+		function myFunction(){
+			points.sort(function(a, b){return a-b});
+			document.getElementById("demo").innerHTML = points;
+		}
+	</script>
+
+</body>
+</html>
